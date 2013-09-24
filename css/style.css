@@ -1,0 +1,301 @@
+body {
+	max-width: 1280px;
+	font-family: sans-serif;
+
+}
+
+header {
+	height: 85px;
+	border-top: #cce7bd solid 7px;
+	-webkit-box-shadow: 0px 1px 3px 0px #d3d3d2;
+	box-shadow: 0px 1px 3px 0px #d3d3d2;
+	background-image: -webkit-gradient(linear, top, bottom, from(#f6fcf3), to(#ffffff)); /* Chrome, Safari 4+ */
+	background-image: -webkit-linear-gradient(top, #f6fcf3, #ffffff); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+	background-image:    -moz-linear-gradient(top, #f6fcf3, #ffffff); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(top, #f6fcf3, #ffffff); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to bottom, #f6fcf3, #ffffff); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+header h4{
+	color: #639e44;
+	padding-top: 32px;
+	font-family: "Dobra book" sans-serif;
+	font-size: 1.2em;
+}
+
+.pull-right {
+	padding-top: 17px;
+}
+.pull-right {
+	font-family: "DIN" sans-serif;
+	font-style: regular;
+	font-size: 1.0em
+}
+.pull-right span {
+	margin-left: 14px;
+	margin-right: 14px;
+}
+.pull-right img {
+	margin-left: 10px;
+}
+
+.map {
+	position: relative;
+}
+
+.map img {
+	width: 100%;
+	margin: auto;
+}
+
+.search {
+	position: absolute;
+	width: 30%;
+	height: 190px;
+	background-color: #ffffff;
+	margin-left: 5%;
+	border: #b0afac solid 1px;
+	font-family: "Dobra Book";
+	font-size: 1.1em;
+	color: #7c7c7c;
+}
+
+.search .container {
+	margin-top: 28px;
+	margin-left: 2%;
+}
+
+.search .input-group {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.search .input-group-btn {
+	border: #d4d4d4 solid 1px;
+	height: 54px;
+}
+
+.input-group-btn img {
+	height: 15px;
+	width: 15px;
+	margin-left: 20px;
+	margin-right: 18px;
+}
+
+.search .form-control {
+	height: 54px;
+	background-color: #f6f6f6;
+}
+.search .place {
+	display: none;
+}
+
+.signup {
+	height: 197px;
+	background-image: -webkit-gradient(linear, top, bottom, from(#d2eac5), to(#cce7bd)); /* Chrome, Safari 4+ */
+	background-image: -webkit-linear-gradient(top, #d2eac5, #cce7bd); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+	background-image:    -moz-linear-gradient(top, #d2eac5, #cce7bd); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(top, #d2eac5, #cce7bd); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to bottom, #d2eac5, #cce7bd); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+
+}
+
+.signup .container {
+	padding-top: 3%;
+	margin-right: 15%;
+	color: #484848;
+}
+
+.signup button {
+	color: #ffffff;
+	background-image: -webkit-gradient(linear, top, bottom, from(#1d6eb9), to(#0b5ea4)); /* Chrome, Safari 4+ */
+	background-image: -webkit-linear-gradient(top, #1d6eb9, #0b5ea4); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+	background-image:    -moz-linear-gradient(top, #1d6eb9, #0b5ea4); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(top, #1d6eb9, #0b5ea4); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to bottom, #1d6eb9, #0b5ea4); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+.newtochillwall {
+	color: #4d8b2c;
+	font-family: "Dobra", Medium, sans-serif;
+	font-size: 2.6em;
+}
+
+.create {
+	color: #484848;
+	font-family: "Dobra" sans-serif;
+	font-size: 2.0em;
+	font-weight: lighter;
+}
+
+.signup h2 {
+	text-align: right;
+}
+
+.register {
+	padding-top: 3%;
+	font-family: "DIN" sans-serif;
+	font-size: 1em;
+}
+
+.register span {
+	margin-left: 18px;
+	margin-right: 18px;
+	font-size: 1em;
+}
+
+.help {
+	height: 476px;
+	color: #484848;
+}
+
+.help .container {
+	padding-top: 65px;
+	padding-bottom: 75px;
+}
+
+.help .col-md-4 {
+	width: 27%;
+	margin-left: 4%;
+	margin-right: 2%;
+}
+
+.help h4 {
+	color: #5da237;
+	font-family: "Dobra" sans-serif;
+	font-size: 1.6em;
+}
+
+.help p {
+	font-family: "DIN" sans-serif;
+	font-size: 1.0em;
+}
+
+.help button {
+	color: #3091d1;
+	background-color: #e1f3ff;
+	border-color: #a7d5f3;
+	font-family: "DIN" sans-serif;
+	font-size: 1.0em;
+}
+
+footer .container {
+	padding-top: 40px;
+}
+
+footer {
+	background-color: #5b5f69;
+	height: 267px;
+}
+
+footer .row {
+	text-align: center;
+}
+footer p {
+	color: #8e9197;
+}
+
+ul {
+	color: #b4b5ba;
+	font-family: "DIN" sans-serif;
+	font-size: 1em;
+}
+
+.list-inline > li {
+	padding-left: 18px;
+}
+
+.copyright {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font-size: 0.9em;
+}
+
+.footer-logo {
+
+}
+
+@media screen and (max-width: 768px) {
+	header h4, .search-area {
+		display: none;
+	}
+
+	.search {
+		position: relative;
+		width: 100%;
+		margin-left: 0%;
+		height: 129px;
+	}
+
+	.search .container {
+		margin-top: 20px
+	}
+
+	.search .input-group {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.search .form-control {
+		width: 294px;
+	}
+
+	.search .place {
+		display: inline;
+	}
+
+	span.place {
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+	.signup {
+		height: 235px;
+	}
+
+	.signup h2, .register {
+		text-align: center;
+	}
+
+	.help {
+		height: 503px;
+	}
+
+	.help .container {
+		padding-top: 0px;
+	}
+
+	.help .row {
+		text-align: left;
+	}
+
+	.help .col-md-4 {
+		width: 100%;
+		padding-top: 4%;
+		padding-bottom: 5%;
+	}
+
+	.img-left {
+		float: left;
+		margin-left: -8%;
+		margin-top: -4%;
+	}
+
+	.img-right {
+		float: right;
+	}
+
+	.float {
+		width: 60%;
+	}
+
+	.right {
+		margin-left: 23%;
+	}
+
+	.left {
+
+	}
+
+	.disappeared {
+		display: none;
+	}
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Chillwall-Discover events near you</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+		<script>
+			var map;
+
+			function initialize() {
+			  var mapOptions = {
+			    zoom: 6,
+			    mapTypeId: google.maps.MapTypeId.ROADMAP
+			  };
+			  map = new google.maps.Map(document.getElementById('map-canvas'),
+			      mapOptions);
+
+			  // Try HTML5 geolocation
+			  if(navigator.geolocation) {
+			    navigator.geolocation.getCurrentPosition(function(position) {
+			      var pos = new google.maps.LatLng(position.coords.latitude,
+			                                       position.coords.longitude);
+
+			      var infowindow = new google.maps.InfoWindow({
+			        map: map,
+			        position: pos,
+			        content: 'Location found using HTML5.'
+			      });
+
+			      map.setCenter(pos);
+			    }, function() {
+			      handleNoGeolocation(true);
+			    });
+			  } else {
+			    // Browser doesn't support Geolocation
+			    handleNoGeolocation(false);
+			  }
+			}
+
+			function handleNoGeolocation(errorFlag) {
+			  if (errorFlag) {
+			    var content = 'Error: The Geolocation service failed.';
+			  } else {
+			    var content = 'Error: Your browser doesn\'t support geolocation.';
+			  }
+
+			  var options = {
+			    map: map,
+			    position: new google.maps.LatLng(60, 105),
+			    content: content
+			  };
+
+			  var infowindow = new google.maps.InfoWindow(options);
+			  map.setCenter(options.position);
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+	</head>
+
+
+	<body>
+		<!--header-->
+		<header class="">
+			<div class="container">
+				
+				<a class="navbar-brand" href="#"><img src="images/header-logo.png"></a>
+				<h4 class="navbar-text">Discover Events Near You</h4>
+				<p class="navbar-text pull-right">
+					<a href="#">Sign in</a>
+					<span>OR</span>
+					<a href="#">Connect with</a>
+					<img src="images/fb-icon.png">
+				</p>
+			</div>
+		</header>
+
+		<div id="map-canvas">
+		</div>
+
+		<div class="map">
+			<div class="search">
+				<div class="container">
+					<span>What are you looing for?</span>
+					<div class="input-group">
+	      				<input type="text" class="form-control" placeholder="eg. skating, concerts, etc.">
+	      				<span class="place">in</span>
+	      				<input type="text" class="form-control place" placeholder="eg. New York">
+	      				<span class="input-group-btn">
+	        				
+	        					<img src="images/search-icon.png">
+	        				
+	      				</span>
+	    			</div>
+	    			<span class="search-area"><img src="images/search-location-marker.png" style="width: 12px; height: 18px; margin-right: 7px;">Toronto, ON | <a href="#">Change City</a></span>
+	    		</div>
+			</div>
+			<img src="images/map.jpg">		
+		</div>
+
+		<div class="signup">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-1">
+						<h2 class="newtochillwall">New to Chillwall?</h2>
+						<h2 class="create">Create Your Event Wall. Always Free.</h2>
+					</div>
+					<div class="col-md-4 col-md-offset-1 register">
+						<button type="button" class="btn">Sign Up Free</button>
+						<span>OR</span>
+						<div class="btn-group">
+							<button type="button" class="btn">Connect with</button>
+							<button type="button" class="btn" style="padding: 0px;"><img src="images/fb-icon.png" style="height: 32px;"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="help">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-4">
+						<div class="img-left" data-picture data-alt="">
+							<div data-src="images/icon-01-desktop.png" data-media="(max-width: 1280px)"></div>
+	  						<div data-src="images/icon-01-desktop.png" data-media="(max-width: 1270px)"></div>
+	  						<div data-src="images/icon-01-tablet.png" data-media="(max-width: 768px)"></div>
+	  						<noscript>
+	  							<img class="img-left" src="images/icon-01-desktop.png">
+	  						</noscript>
+	  					</div>
+						<div class="float right">
+							<h4>Discover Events Near You</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+							<button type="button" class="btn">Learn More</button>
+						</div>
+					</div>
+	  				<div class="col-md-4">
+	  					<div class="img-right" data-picture data-alt="">
+	  						<div data-src="images/icon-02-desktop.png" data-media="(max-width: 1280px)"></div>
+	  						<div data-src="images/icon-02-desktop.png" data-media="(max-width: 1270px)"></div>
+	  						<div data-src="images/icon-02-tablet.png" data-media="(max-width: 768px)"></div>
+	  						<noscript>
+	  							<img class="img-right" src="images/icon-02-desktop.png">
+	  						</noscript>
+	  					</div>
+	  					<div class="float left">
+		  					<h4>Build Your Personal Event Wall</h4>
+		  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+							<button type="button" class="btn">Learn More</button>
+						</div>
+	  				</div>
+	  				<div class="col-md-4 disappeared">
+	  					<img src="images/icon-03-desktop-placeholder.png">
+	  					<h4>Create Your Own Event</h4>
+	  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						<button type="button" class="btn">Learn More</button>
+	  				</div>
+				</div>
+			</div>
+		</div>
+
+		<!--footer-->
+		<footer class="navbar-static-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="">
+						<ul class="list-inline">
+							<li>About</li>
+							<li>Press</li>
+							<li>Legal</li>
+							<li>Privacy</li>
+							<li>Blog</li>
+							<li>Careers</li>
+							<li>Creat Event</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row copyright">
+					<div class="">
+						<p>2013 Chillwall Inc. All Rights Reserved</p>
+					</div>
+				</div>
+				<div class="row footer-logo">
+					<div class="">
+						<img src="images/footer-logo.png">
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/matchmedia.js"></script>
+		<script src="js/picturefill.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+	</body>
+</html>
