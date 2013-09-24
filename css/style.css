@@ -1,5 +1,27 @@
+@font-face {
+	font-family: Dobra-Book;
+	src: url('fonts/Dobra/Dobra-Book.ttf');
+}
+@font-face {
+	font-family: DIN-Regular;
+	src: url('fonts/DIN/DIN-Regular.ttf');
+}
+@font-face {
+	font-family: DIN-Light;
+	src: url('fonts/DIN/DIN-Light.ttf');
+}
+@font-face {
+	font-family: Dobra-Medium;
+	src: url('fonts/Dobra/Dobra-Medium.ttf');
+}
+@font-face {
+	font-family: Dobra-Light;
+	src: url('fonts/Dobra/Dobra-Light.ttf');
+}
+
+
 body {
-	max-width: 1280px;
+	max-width: 1680px;
 	font-family: sans-serif;
 
 }
@@ -19,7 +41,7 @@ header {
 header h4{
 	color: #639e44;
 	padding-top: 32px;
-	font-family: "Dobra book" sans-serif;
+	font-family: "Dobra-Book" sans-serif;
 	font-size: 1.2em;
 }
 
@@ -27,8 +49,7 @@ header h4{
 	padding-top: 17px;
 }
 .pull-right {
-	font-family: "DIN" sans-serif;
-	font-style: regular;
+	font-family: "DIN-Regular" sans-serif;
 	font-size: 1.0em
 }
 .pull-right span {
@@ -46,6 +67,8 @@ header h4{
 .map img {
 	width: 100%;
 	margin: auto;
+	-webkit-box-shadow: 0px 1px 3px 0px #cbcac4;
+	box-shadow: 0px 1px 3px 0px #cbcac4;
 }
 
 .search {
@@ -55,7 +78,7 @@ header h4{
 	background-color: #ffffff;
 	margin-left: 5%;
 	border: #b0afac solid 1px;
-	font-family: "Dobra Book";
+	font-family: "Dobra-Book", sans-serif;
 	font-size: 1.1em;
 	color: #7c7c7c;
 }
@@ -116,13 +139,13 @@ header h4{
 }
 .newtochillwall {
 	color: #4d8b2c;
-	font-family: "Dobra", Medium, sans-serif;
+	font-family: "Dobra-", sans-serif;
 	font-size: 2.6em;
 }
 
 .create {
 	color: #484848;
-	font-family: "Dobra" sans-serif;
+	font-family: "Dobra-light" sans-serif;
 	font-size: 2.0em;
 	font-weight: lighter;
 }
@@ -133,14 +156,14 @@ header h4{
 
 .register {
 	padding-top: 3%;
-	font-family: "DIN" sans-serif;
-	font-size: 1em;
+	font-family: "DIN-Regular" sans-serif;
+	font-size: 0.9em;
 }
 
 .register span {
 	margin-left: 18px;
 	margin-right: 18px;
-	font-size: 1em;
+	font-size: 0.8em;
 }
 
 .help {
@@ -161,12 +184,12 @@ header h4{
 
 .help h4 {
 	color: #5da237;
-	font-family: "Dobra" sans-serif;
+	font-family: "Dobra-Book" sans-serif;
 	font-size: 1.6em;
 }
 
 .help p {
-	font-family: "DIN" sans-serif;
+	font-family: "DIN-Light" sans-serif;
 	font-size: 1.0em;
 }
 
@@ -174,7 +197,7 @@ header h4{
 	color: #3091d1;
 	background-color: #e1f3ff;
 	border-color: #a7d5f3;
-	font-family: "DIN" sans-serif;
+	font-family: "DIN-Regular" sans-serif;
 	font-size: 1.0em;
 }
 
@@ -192,11 +215,12 @@ footer .row {
 }
 footer p {
 	color: #8e9197;
+	font-family: "Arial-Regular";
 }
 
 ul {
 	color: #b4b5ba;
-	font-family: "DIN" sans-serif;
+	font-family: "DIN-Regular" sans-serif;
 	font-size: 1em;
 }
 
